@@ -21,6 +21,8 @@ bikes_df = pd.read_csv("C:/Users/steph/OneDrive/Desktop/_DATA SCIENCE BOOTCAMP T
 
 bikes_df.head()
 ```
+<img width="746" alt="Pandas screenshot" src="https://github.com/user-attachments/assets/b4310ad6-6da5-47a5-98bc-9948e4977fee" />
+
 #### DATA MODIFICATION
 ``` Python
 # (1). Adding the following 3 columns to your pansdas Dataframe:  bikes_df
@@ -40,6 +42,9 @@ bikes_df["Profit"] = bikes_df["SalesRevenue"] - bikes_df["TotalCostPrice"]
 bikes_df.head()
 
 ```
+
+<img width="745" alt="Data Modification Screen shot" src="https://github.com/user-attachments/assets/7d002691-124e-41f5-b3d2-07837851af0a" />
+
 ## DATA ANALYSIS
 
 #### DATA FILTERING
@@ -56,6 +61,8 @@ bike_in_the_US = bikes_df[(is_uSA) & (is_bike)]
 bike_in_the_US.head()
 ```
 
+<img width="742" alt="Data Filtering Screen Shot" src="https://github.com/user-attachments/assets/9cbf6390-2e67-4942-b0ac-a785055cec38" />
+
 #### DATA AGGREGATION (Data Summary)
 
 ``` Python
@@ -66,6 +73,10 @@ total_profit_by_states = bike_in_the_US.pivot_table(values = "Profit" , index = 
 total_profit_by_states
 
 ```
+
+<img width="194" alt="Data Aggregation Screen Shot" src="https://github.com/user-attachments/assets/5777f0eb-99cc-41f5-ad7c-4f056366db8b" />
+
+
 #### DATA SORTING ( Data Ranking)
 
 ``` Python
@@ -74,6 +85,10 @@ total_profit_by_states
 total_profit_by_states.sort_values("Profit", ascending = False )
 
 ```
+
+<img width="178" alt="Data Ranking Screen Shot" src="https://github.com/user-attachments/assets/f3dd5ab3-1406-43c0-bfde-5e4aaaa7c265" />
+
+
 #### RESULT
 
 ``` Python
@@ -84,6 +99,9 @@ top_5_most_profitable_states_in_USA = total_profit_by_states.sort_values("Profit
 top_5_most_profitable_states_in_USA
 
 ```
+
+<img width="191" alt="Result for top 5 most profitable States" src="https://github.com/user-attachments/assets/3225eb38-530b-4f8c-8ec9-d90baf882a8a" />
+
 
 ## DATA VISUALIZATION
 
@@ -105,6 +123,5 @@ plt.ylabel("Total Profit in Million Dollars")
 plt.show()
 
 ```
-
 
 <img width="415" alt="Project 1 Screen shot" src="https://github.com/user-attachments/assets/89b82a83-1152-4d11-8d95-c5b714e7a6a7" />
