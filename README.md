@@ -66,3 +66,44 @@ total_profit_by_states = bike_in_the_US.pivot_table(values = "Profit" , index = 
 total_profit_by_states
 
 ```
+#### DATA SORTING ( Data Ranking)
+
+``` Python
+# Sorting the aggregated data in orser to Rank the states according to the top most profitable states.
+
+total_profit_by_states.sort_values("Profit", ascending = False )
+
+```
+#### RESULT
+
+``` Python
+# The Top Most-Profitable 5 States for the Bike Product Category in the United State ?
+
+top_5_most_profitable_states_in_USA = total_profit_by_states.sort_values("Profit", ascending = False ).head()
+
+top_5_most_profitable_states_in_USA
+
+```
+
+## DATA VISUALIZATION
+
+``` Python
+# Visualizing the result
+
+top_5_most_profitable_states_in_USA.plot(kind = "bar")
+
+# Adding a title and label to the plot
+
+plt.title("The Top 5 Most Profitable States for Bike Product in the US")
+
+plt.xlabel("States")
+
+plt.ylabel("Total Profit in Million Dollars")
+
+# Showing the plot
+
+plt.show()
+
+```
+
+
