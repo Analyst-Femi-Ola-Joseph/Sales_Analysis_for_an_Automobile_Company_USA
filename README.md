@@ -107,3 +107,4 @@ plt.show()
 ```
 
 
+<img width="415" alt="Project 1 Screen shot" src="https://github.com/user-attachments/assets/89b82a83-1152-4d11-8d95-c5b714e7a6a7" />
